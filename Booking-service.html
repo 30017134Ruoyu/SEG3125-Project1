@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
+    <style>
+        .navbar-center-text {
+            flex-grow: 1;
+            text-align: center;
+            padding-left: 300px; 
+            padding-right: 300px; 
+        }
+
+        
+        .footer-custom {
+            background-color: #ffc107;
+            color: #000000; 
+        }
+      
+
+        .card-body {
+            background-color: gold;
+            color: black;
+        }
+
+        
+       
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="white" style="background-color:#ffcc00">
+        <div class="container-fluid">
+          
+          <nav class="navbar ">
+            <div class="container-fluid">
+              <a class="navbar-brand justify-content-between" href="Index.html">
+                <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\logo-no-background.png"  alt="Logo" width="60" height="60" >
+              </a>
+            </div>
+          </nav>
+
+          <nav class="navbar ">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+          <div class="navbar-center-text">
+            <h2><span></span></h2>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active"  style="color: #fffdfd;"      aria-current="page" href="#">Home</a>
+              <a class="nav-link" style="color: #fffdfd;" href="AboutUs.html">About us</a>
+              
+            </div>
+            <nav class="navbar ">
+                <form class="container-fluid justify-content-end">
+                    <a href="Confirm.html"><button class="btn btn-outline-primary me-2" type="button">My Reservation</button></a>
+                </form>
+              </nav> 
+          </div>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="Home.html"> Home</a></li>
+          <li class="breadcrumb-item"><a href="Booking.html"> Book</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Booking service</li>
+        </ol>
+    </nav>
+
+  
+    <div class="container-fluid mt-2 flex-grow-1">
+        <div class="row">
+            <div class="col-md-3 p-0">
+                <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\back.jpg" class="img-fluid h-100" alt="Large Image 1">
+            </div>
+            <div class="col-md-6">
+                <div class="container mt-5 flex-grow-1">
+                    <h2 class="text-center"><strong>Booking</strong></h2>
+                    <h5 class="card-title" style="color: blue;">Follow step by step to finish booking</h5>
+                    <div class="progress mt-4" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 50%">50%</div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <form id="booking-form">
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Service:</label>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pet-care" name="service" value="pet-care">
+                                            <label class="form-check-label" for="pet-care">Daily Pet Care</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pet-medical" name="service" value="pet-medical">
+                                            <label class="form-check-label" for="pet-medical">Pet Medical</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pet-board" name="service" value="pet-board">
+                                            <label class="form-check-label" for="pet-board">Pet Board</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 d-none" id="care-detail">
+                                    <label for="care-detail-select" class="col-sm-2 col-form-label">Care detail:</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" id="care-detail-select" name="care-detail">
+                                            <option value="" selected>select your care detail</option>
+                                            <option value="oral-care">Oral Care</option>
+                                            <option value="limb-care">Limb Care</option>
+                                            <option value="fur-care">Fur Care</option>
+                                            <option value="fur-care">Head and facial Care</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 d-none" id="vet">
+                                    <label for="vet-select" class="col-sm-2 col-form-label">Vet:</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" id="vet-select" name="vet">
+                                            <option value="" selected>select your vet</option>
+                                            <option value="vet1">Marcel Reeves</option>
+                                            <option value="vet2">Stewart Rogers</option>
+                                            <option value="vet3">Anna Clay</option>
+                                            <option value="vet4">Peter Parker</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 d-none" id="category">
+                                    <label for="category-select" class="col-sm-2 col-form-label">Category:</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" id="category-select" name="category">
+                                            <option value="" selected>select your category of pet</option>
+                                            <option value="small-pet">Cat</option>
+                                            <option value="medium-pet">Dog</option>
+                                            <option value="large-pet">Other Pets</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="Booking.html" class="btn btn-primary">Back</a>
+                                    <a href="Booking-date.html" class="btn btn-primary">Next</a>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-0">
+                <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\back2.jpg" class="img-fluid h-100" alt="Large Image 2">
+            </div>
+        </div>
+    </div>
+    <footer class="footer-custom text-dark mt-auto py-3">
+        <div class="container d-flex justify-content-between flex-wrap">
+            <p class="mb-0">Location: 123 Ottawa St</p>
+            <p class="mb-0">Tel: 1-123-456-7890</p>
+            <p class="mb-0">Open from: 9:00AM - 5:00PM</p>
+        </div>
+    </footer>
+    
+    <script>
+        const services = document.querySelectorAll('input[name="service"]');
+        services.forEach(service => {
+            service.addEventListener('change', function() {
+                document.getElementById('care-detail').classList.add('d-none');
+                document.getElementById('vet').classList.add('d-none');
+                document.getElementById('category').classList.add('d-none');
+                
+
+                services.forEach(service => {
+                    if (service.checked) {
+                        if (service.value === 'pet-care') {
+                            document.getElementById('care-detail').classList.remove('d-none');
+                        } else if (service.value === 'pet-medical') {
+                            document.getElementById('vet').classList.remove('d-none');
+                        } else if (service.value === 'pet-board') {
+                            document.getElementById('category').classList.remove('d-none');
+                        }
+                    }
+                });
+            });
+        });
+        
+    </script>
+</body>
+</html>

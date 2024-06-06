@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyPetCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
+    <style>
+        .navbar-center-text {
+            flex-grow: 1;
+            text-align: center;
+            padding-left: 300px; 
+            padding-right: 300px; 
+        }
+
+        
+        .footer-custom {
+            background-color: #ffc107;
+            color: #000000; 
+        }
+      
+
+        .card-body {
+            background-color: gold;
+            color: black;
+        }
+
+        
+       
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="white" style="background-color:#ffcc00">
+        <div class="container-fluid">
+          
+          <nav class="navbar ">
+            <div class="container-fluid">
+              <a class="navbar-brand justify-content-between" href="Index.html">
+                <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\logo-no-background.png"  alt="Logo" width="60" height="60" >
+              </a>
+            </div>
+          </nav>
+
+          <nav class="navbar ">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+          <div class="navbar-center-text">
+            <h2><span></span></h2>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active"  style="color: #fffdfd;"      aria-current="page" href="#">Home</a>
+              <a class="nav-link" style="color: #fffdfd;" href="AboutUs.html">About us</a>
+              
+            </div>
+            <nav class="navbar ">
+                <form class="container-fluid justify-content-end">
+                  <a href="Confirm.html"><button class="btn btn-outline-primary me-2" type="button">My Reservation</button></a>
+                </form>
+              </nav> 
+          </div>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="Index.html"> Welcome</a></li>
+          <li class="breadcrumb-item"><a href="Home.html"> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Daily Pet Care</li>
+        </ol>
+    </nav>
+
+
+    <div class="container-fluid mt-2 flex-grow-1">
+      <div class="row">
+      
+          <div class="col-md-3 p-0">
+            <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\back.jpg" class="img-fluid" alt="Left Image" >
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <a href="oral.html">
+                <div class="card text-bg-light h-100">
+                  <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\oral.jpg" class="card-img" alt="..." height="400px">
+                  <div class="card-img-overlay">
+                    <h3 class="card-title" style="color: #000000;">Oral Care</h3>
+                  </div>
+                </div>  
+              </a>
+              
+              <a href="fur.html">
+                <div class="card text-bg-light h-100">
+                  <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\fur clean.jpg" class="card-img" alt="..." height="400px">
+                  <div class="card-img-overlay">
+                    <h3 class="card-title" style="color: #000000;">Fur Care</h3>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="headandfacial.html">
+                <div class="card text-bg-light h-100">
+                  <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\wash.jpg" class="card-img" alt="..." height="400px">
+                  <div class="card-img-overlay">
+                    <h3 class="card-title" style="color: #000000;">Head and facial Care</h3>
+                    
+                  </div>
+                </div>
+
+              </a>
+              <a href="limb.html">
+                <div class="card text-bg-light mb-2 h-100">
+                  <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\bodyclean.jpg" class="card-img" alt="..." height="400px">
+                  <div class="card-img-overlay">
+                    <h3 class="card-title" style="color: #000000;">Limb care</h3>
+                  </div>
+                </div>
+
+              </a>
+              
+            </div>
+
+          </div>
+
+
+          <div class="col-md-3 p-0">
+              <img src="C:\\Users\\MSI_NB\\Desktop\\SEG3125\\project 1\\asset\\back2.jpg" class="img-fluid h-100" alt="Right Image">
+          </div>
+      </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="footer-custom text-dark mt-auto py-3">
+        <div class="container d-flex justify-content-between flex-wrap">
+            <p class="mb-0">Location: 123 Ottawa St</p>
+            <p class="mb-0">Tel: 1-123-456-7890</p>
+            <p class="mb-0">Open from: 9:00AM - 5:00PM</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
